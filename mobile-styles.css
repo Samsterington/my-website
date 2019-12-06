@@ -1,0 +1,213 @@
+@media only screen and (max-width: 1000px) {
+  body {
+    /* background-color: lightblue; */
+    margin: 30px;
+  }
+
+  .twoSideGrid {
+    grid-template-columns: auto;
+    justify-content: center;
+    /* align-items: baseline; */
+  }
+
+  .threeSideGrid {
+    grid-template-columns: auto;
+    justify-content: center;    
+    /* align-items: baseline; */
+    
+  }
+
+  .containerStyle {
+    width: auto !important;
+  }
+
+  /* Swapping pictures */
+
+  #matlabExtraCont, #infoExtraCont {
+    width: 100%;
+  }
+  
+
+  #matlabExtraCont img, #infoExtraCont img {
+    margin: 0px auto !important;
+    float: none !important;
+  }
+
+  /* Background switches */
+
+  .switch{
+    display: none;
+  }
+
+  /* Experience bar */
+
+  /* Just for testing out if no experience bar is needed */
+  #logos {
+    /* display: none; */
+    width: 80%;
+  }
+
+  #experienceIn {
+    width: 115px;
+    /* height: initial; */
+  }
+
+  #logos > img {
+    width: 100%;
+  }
+
+  #closeIcon {
+    width: 60%;
+    margin-bottom: 20px;
+    /* margin: 15px 90%; */
+  }
+
+  @keyframes swell {
+
+  }
+  
+  @keyframes shrink {
+  
+  }
+
+  @keyframes leave {
+    from {right: 0px}
+    to {right: -120px}
+  }
+  
+  @keyframes return {
+    from {right: -120px}
+    to {right: 0px}
+  }
+
+  /* Intro container */
+
+  #introCont {
+    width: 85% !important;
+    height: auto !important;
+    margin: 0px;
+    margin-right: 10%;
+    
+  }
+
+  #introText {
+    font-style: normal;
+    font-size: 14pt !important;
+    text-align: none !important;
+    display: inline;
+  }
+
+  #introCont > h1 {
+    font-size: 50pt;
+  }
+
+  #journeyCodeCont {
+    width: 90% !important;
+    margin: 0px;
+  }
+
+  #infoCont {
+    margin-bottom: -80px;
+  }
+
+  /* No logos in content */
+  .logo {
+    display: none;
+  }
+
+  #contactButton {
+    width: 400px;
+    border-radius: 20px;
+    font-size: 45px !important;
+  }
+
+  /* JS */
+
+  #JSExtraCont {
+    grid-row-start: 2;
+    width: 90%;
+    height: inherit;
+    padding-top: 10px;
+    margin: -25px auto 0px auto;
+    border-radius: 20px;
+  }
+
+  #JSExtraCont > img {
+    border-radius: 20px;
+    width: 49%;
+    /* padding: -3px 0px; */
+  }
+
+  /* Tutoring */
+
+  #TutorExtraCont {
+    width: 90%;
+    height: auto;
+    margin: 0px auto !important;
+  }
+
+  #TutorExtraCont > img {
+    border-radius: 30px;
+  }
+
+
+  #TutorExtraCont img {
+    width: 100%;
+    /* margin: 0px auto !important; */
+  }
+
+  #WebsiteExtraCont {
+    grid-row-start: 2;
+    margin: 0px auto;
+    grid-gap: 30px;
+  }
+
+  #websiteExtraCont > div > a > img {
+    height: 400px;
+    border-radius: 30px;
+  }
+  
+  /* AITutor */ 
+
+  #AITutorExtraCont {
+    width: 80%;
+    margin: 0px auto !important;
+  }
+
+  #AITutorImgs {
+    width: 100%;
+    border-radius: 170px;
+    padding: 0px 10px;
+  }
+
+  #santorini {
+    top: 70px;
+  }
+
+  #santRules {
+    top: 675px;
+    left: 50px;
+    font-size: 20pt;
+    width: 50%;
+  }
+
+  #bubbleBudgeting {
+    top: 70px;
+  }
+
+  #BBExplain {
+    top: 1290px;
+    left: 50px;
+    width: 70%;
+    font-size: 20pt;
+    height: min-content;
+  }
+
+  #closeExample {
+    font-size: 20pt;
+  }
+
+  #contactCont {
+    margin: 20px;
+  }
+}

@@ -1,0 +1,43 @@
+/* Experience bar */
+
+@keyframes swell {
+  from {width: 18px}
+  to {width: 25px}
+}
+
+@keyframes shrink {
+  from {width: 25px}
+  to {width: 18px}
+}
+
+@keyframes shake {
+  0% {right: 0px}
+
+  33% {right: 1px}
+
+  66% {right: -1px}
+
+  100% {right: 0px}
+}
+
+@keyframes leave {
+  from {right: 0px}
+  to {right: -70px}
+}
+
+@keyframes return {
+  from {right: -70px}
+  to {right: 0px}
+}
+
+
+/* Swapping pics // Info */
+
+@keyframes fadeOut {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}

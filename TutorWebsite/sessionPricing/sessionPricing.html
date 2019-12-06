@@ -1,0 +1,132 @@
+<head>
+    <head>
+    
+        <title>The Coding Coach</title>
+        
+        <script src="../libraries/p5.js" type="text/javascript"></script>
+        <script src="../libraries/p5.dom.js" type="text/javascript"></script>
+        <script src="sketch.js" type="text/javascript"></script>
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="libraries/jquery-ui-1.12.1/jquery-ui.js"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="../coding-tutor.css">
+        
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+        
+    </head>
+
+    <body>
+        
+        <div id="sessionNpricing">
+        
+            <div id="title">
+
+                <span><a href="../index.html">The Coding Coach</a></span>
+
+            </div>
+
+            <div id="menuBar">
+                
+                <span><a class="menuLink" href="../myStory/myStory.html">My Story</a></span>
+                <span><a class="menuLink" href="../whyLearn/whyLearn.html">Why learn to code?</a></span>
+                <span><a class="menuLink" href="../whatLearn/whatLearn.html">What will you learn?</a></span>
+                <span><a class="menuLink" href="../YourWork/yourWork.html">Your work!</a></span>
+                <span><a class="menuLink" href="sessionPricing.html">Sessions &amp; Pricing</a></span>
+
+            </div>
+
+            <div id="menuUnderline"></div>
+
+            <div id="mainContent">
+
+                <div class="header" id="sessPricHeader">Sessions and Pricing</div>
+                
+                <div id="squeezeContent">
+
+                    <p>I normally coach between one and three students at a time and sessions generally last an hour, though they can be extended on request. I happily travel to my students homes for free if they are within reasonable cycling distance, and if not I’m also happy to drive; I just ask my petrol costs are covered. All you will need is WiFi and a computer/laptop to code on, and if you don’t have a personal computer I can bring a spare laptop along. If you don’t live in Cambridge I can also coach you online. I do this using a video chat and a shared online coding space which allows both myself and the student to edit the same code in realtime.</p>
+
+                    <span id="pricingTitle" class="pricingText">Session hourly prices:</span>
+                    
+                    <table id="pricesDiv">
+                        <tr>
+                            <td class="textRight"><span class="pricingText ">Private coaching &#58;</span></td>
+                            <td><span class="pricingText textLeft">£30</span></td>
+                        </tr>
+                        <tr>
+                            <td class="textRight"><span class="pricingText">Small group coaching (2/3) &#58;</span></td>
+                            <td><span class="pricingText textLeft">£36/£42</span></td>
+                        </tr>
+                        <tr>
+                            <td class="textRight"><span class="pricingText">Large group coaching &#58;</span></td>
+                            <td><span class="pricingText textLeft">Situation dependent</span></td>
+                        </tr>
+                    </table>
+                    
+                    <p>Contact me either by email or phone if you need any other information about the sessions or would like to arrange one. I hope to hear from you soon. </p>
+                
+                </div>
+                
+                
+                
+                
+                
+
+                <div class="bottomMarg" id="menuUnderline"></div>
+
+                <div class="center">
+
+                    <div id="emailMark"><span>Email</span></div>
+
+                    <span class="contactDetails">sam.williams@thecodingcoach.co.uk</span>
+
+                    <div id="phoneMark"><span>Phone</span></div>
+
+                    <span class="contactDetails">07454514023</span>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        
+        <script type="text/javascript">   
+            
+            //Site reactions
+            
+            function stretchOnHover(id) {
+                
+                let amount = $("#" + id).width() / 25;
+                
+                $("#" + id).hover(function() {
+
+                    $("#" + id).animate({width: "+=" + amount + "px"}, 300);
+
+                }, function() {
+
+                    $("#" + id).animate({width: "-=" + amount + "px"}, 300);
+
+                });
+                
+            };
+            
+            stretchOnHover("title");
+            stretchOnHover("sessPricHeader");
+            
+            $("#p5img").click(function() {
+                
+                $("#editorIframe").fadeIn();
+                $("#closeTag").fadeIn();
+                
+            });
+            
+            
+        
+        </script>
+    
+    </body>
+    
+</head>

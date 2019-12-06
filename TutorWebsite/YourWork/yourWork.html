@@ -1,0 +1,144 @@
+<head>
+    <head>
+    
+        <title>Coding Tutor</title>
+        
+        <script src="../libraries/p5.js" type="text/javascript"></script>
+        <script src="../libraries/p5.dom.js" type="text/javascript"></script>
+        <script src="sketch.js" type="text/javascript"></script>
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="libraries/jquery-ui-1.12.1/jquery-ui.js"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="../coding-tutor.css">
+        
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+        
+    </head>
+
+    <body>
+        
+        <div id="whatLearn">
+        
+            <div id="title">
+
+                <span><a href="../index.html">The Coding Coach</a></span>
+
+            </div>
+
+            <div id="menuBar">
+                
+                <span><a class="menuLink" href="../myStory/myStory.html">My Story</a></span>
+                <span><a class="menuLink" href="../whyLearn/whyLearn.html">Why learn to code?</a></span>
+                <span><a class="menuLink" href="../whatLearn/whatLearn.html">What will you learn?</a></span>
+                <span><a class="menuLink" href="yourWork.html">Your work!</a></span>
+                <span><a class="menuLink" href="../sessionPricing/sessionPricing.html">Sessions &amp; Pricing</a></span>
+
+            </div>
+
+            <div id="menuUnderline"></div>
+
+            <div id="mainContent">
+                
+                <div class="header" id="yWHeader">Your Work</div>
+                
+                <p class="basicText textCentered">Here's some of the awesome, creative projects my students have been working on.</p>
+                
+                <div id="examplesArea">
+                    
+                    <div id="centerIframes">
+
+                        <div id="topLeft">
+
+                            <iframe id="dodgeGame" src="studentExamples/DodgeGameExample/index.html"></iframe>
+
+                            <p>This game was created by Hannah, showing her strong understanding of object oriented programming. Click the screen to begin, and see if you can get past 100 blocks to win.</p>
+
+                        </div>
+
+                        <div id="topRight">
+
+                            <iframe id="movingLight" src="studentExamples/movingLight/index.html"></iframe>
+
+                            <p>This was made by Josh with a clever use of 'for loops'. It may look 3D but it is actually clever trick from Josh. Have a go and moving you're mouse around the image.</p>
+
+
+                        </div>
+                        
+                        <div class="clear"></div>
+                        
+                        <div id="bottomMid">
+
+                            <iframe id="physicsBalls" src="studentExamples/physicsBalls/index.html"></iframe>
+
+                            <p>This is a physics engine made by Jake. It uses boolean logic and a nice amount of physics and maths equations. I love the use of a ‘for loop’ to set multiple balls in a descending starting line  giving the beautiful wave effect, nice creative discovery Jake. Click to get it started.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                <div class="clear"></div>
+                
+                <div class="bottomMarg" id="menuUnderline"></div>
+
+                <div class="center">
+
+                    <div id="emailMark"><span>Email</span></div>
+
+                    <span class="contactDetails">sam.williams@thecodingcoach.co.uk</span>
+
+                    <div id="phoneMark"><span>Phone</span></div>
+
+                    <span class="contactDetails">07454514023</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        
+        
+        <script type="text/javascript">   
+            
+            //On load calculations
+            
+            let iframeHorShift = ((innerWidth - 1100) / 2) + 30;
+            let closeHorShift = iframeHorShift - 90;
+            
+            $("#editorIframe").css("left",iframeHorShift);
+            $("#closeTag").css("left",closeHorShift);
+            
+            //Site reactions
+            
+            function stretchOnHover(id) {
+                
+                let amount = $("#" + id).width() / 25;
+                
+                $("#" + id).hover(function() {
+
+                    $("#" + id).animate({width: "+=" + amount + "px"}, 300);
+
+                }, function() {
+
+                    $("#" + id).animate({width: "-=" + amount + "px"}, 300);
+
+                });
+                
+            };
+            
+            stretchOnHover("title");
+            stretchOnHover("yWHeader");
+            
+            
+        
+        </script>
+    
+    </body>
+    
+</head>

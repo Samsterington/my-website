@@ -1,0 +1,342 @@
+<html>
+
+<head>
+  <title>Sam B Williams - Software Developer</title>
+
+  <!-- Stop weird characters coming out -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="framework.css" />
+  <link rel="stylesheet" type="text/css" href="animations.css" />
+  <link rel="stylesheet" type="text/css" href="mobile-styles.css" />
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Exo:200|Josefin+Slab|Poiret+One&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Background buttons -->
+  <div id="backgroundSwitch" class="font-small blackBorder shadow switch">
+    <span>Turn off background</span>
+  </div>
+
+  <div id="contentSwitch" class="font-small blackBorder shadow switch">
+    <span>Turn off content</span>
+  </div>
+
+  <!-- HEADER -->
+  <div id="content">
+    <grid class="grid" id="mainGrid">
+
+
+      <div id="introCont" class="containerStyle ">
+        <h1 class="text-center">I'm Sam B Williams</h1>
+        <!-- <span class="text-center font-small italics"> My name is unbelievably common so I'm using my middle name instead. I'm certain this isn't going to become a confusing
+          nightmare in the future.</span> -->
+        <span id="introText">
+          Welcome to my little website, it tells you a bit about myself and how I got into the mad world of coding.
+          <br> On the right is all the languages, libraries and frameworks I've worked with over the last few years. Click on
+          them to be taken to information on where I used them.
+          <br> I’m currently
+          <u>looking for a full time software developer job in London</u>, so if you’d like to get in touch my contact information
+          can be found at the bottom of the page.
+          <div id="contactButton">To contact info</div>
+        </span>
+      </div>
+
+
+
+
+      <!-- BASIC INFO -->
+
+      <grid class="grid twoSideGrid">
+        <div id="infoExtraCont">
+          <img id="lampPic" class="blackBorder" src="images/Me1.jpg">
+          <img id="juggleGif" class="blackBorder noDisplay" src="videos/small-juggle.gif" alt=”animated” />
+          <img id="lampPic" class="blackBorder noDisplay" src="images/Me2.jpg">
+          <img id="trampGif" class="blackBorder noDisplay" src="videos/trampoline-trimmed.gif" alt=”animated”/>
+        </div>
+
+        <div id="infoCont" class="containerStyle">
+          <h2>Basic info</h2>
+          <ul>
+            <li>I was born in London but grew up by
+              <span id="easterEgg">the lazy rivers of Cambridge town.</span>
+            </li>
+            <li>I studied GeoScience at the University of Bristol because you know what... it rocks!</li>
+            <li>Graduated top of the year in school of Earth Science but decided that soil and stones might not actually be my
+              true calling.</li>
+            <li>For the last few years I’ve been touring as a director, producer and actor but on the side I starting teaching
+              myself JavaScript and I’ve been gripped by the world of programming ever since.
+            </li>
+            <li>Beyond coding and theatre I'm an enthusiastic juggler.</li>
+            <li>Lover of the board game.</li>
+            <li>Trampoliner extraordinaire (almost).</li>
+            <li>Bass player, song writer and music theoretician (if that’s a word?)</li>
+          </ul>
+        </div>
+        <script src="javascript/info-pics.js"></script>
+      </grid>
+
+
+      <!-- JOURNEY INTO CODE -->
+      <!-- <grid id="journeyGrid" class="grid threeSideGrid"> -->
+      <grid id="journeyGrid" class="grid">
+        <div id="journeyCodeCont" class="sectionHeader containerStyle">
+          <h1>My Journey Into Code</h1>
+        </div>
+
+        <!-- Other ideas that might come in later -->
+        <!-- <div id="journeyTheatreCont" class="sectionHeader containerStyle">
+        <h2>Life in theatre</h2>
+      </div>
+
+      <div id="journeyOtherCont" class="sectionHeader containerStyle">
+        <h2>Personal projects</h2>
+      </div> -->
+      </grid>
+
+
+      <!-- MATLAB -->
+
+      <grid class="grid twoSideGrid">
+        <div id="matlabCont" class="containerStyle">
+          <h2>Learning MatLab</h2>
+          <grid class="grid" id="matlabInnerGrid">
+            <img class="logo" src="images/matlab-logo.png">
+            <span>
+              I was first introduced to programming at university. We were encouraged to use MATLAB rather than Excel for our data formatting,
+              visualisation and analysis; and let’s just say I took to it like a duck to water. It was revolutionary, and
+              that's not just because excel is rubbish (no offence to Excel developers), it made so much more sense to me,
+              so I started picking course units where I could use these newly acquired programming skills. On the left are
+              some MATLAB data visualisation I used for my GeoPhysics dissertation (got 90% a not so humble brag).
+            </span>
+          </grid>
+        </div>
+
+        <div id="matlabExtraCont">
+          <img id="contourPic" class="blackBorder" src="images/contour-map.png">
+          <img id="volumePic" class="blackBorder noDisplay" src="images/3d-quarry.png">
+          <img id="graphPic" class="blackBorder noDisplay" src="images/graph.png">
+          <img id="gprPic" class="blackBorder noDisplay" src="images/GPR.png">
+        </div>
+        <script src="javascript/matlab-pics.js"></script>
+      </grid>
+
+
+      <!-- JS AND P5.JS -->
+
+      <grid class="grid twoSideGrid">
+        <div id="JSExtraCont" class="blackBorder shadow">
+          <img src="images/Santorini.png">
+          <img src="images/santorini-coded.png">
+        </div>
+
+        <div id="JSCont" class="containerStyle">
+          <h2>Self Taught Javascript</h2>
+          <div class="grid" id="JSInnerGrid">
+            <img class="logo" src="images/javascript-logo.png">
+            <a target="_" href="https://p5js.org/">
+              <img class="logo" src="images/p5-logo.png">
+            </a>
+            <span id="JStext">
+              In my last year of Uni I realised that MATLAB was only a tiny drop in the huge ocean that was coding, so as my first unassisted
+              paddle into the great blue I decided to teach myself JavaScript. I began using a teach yourself app but that
+              quickly became boring; however, via a heaven sent YouTube algorithm I was lucky enough to stumble across
+              <a target="_" href="https://p5js.org/">p5.js</a> an amazing visual library for Javascript that uses the HTML5 canvas to visualise code in the browser.
+              I used it to make the background to this website.
+              <br />
+              <br /> My proficiency in JS quickly overtook my ability in MATLAB as I discovered Object Oriented Programming and
+              I began undertaking my own coding projects. My favourite was a digitised version of the abstract board game
+              Santorini (I wanted to try it out before buying it). Click on the image to have a go yourself.
+            </span>
+          </div>
+        </div>
+      </grid>
+
+
+
+
+      <!-- TUTOR -->
+
+      <grid class="grid twoSideGrid">
+        <div id="TutorCont" class="containerStyle">
+          <h2>Becoming a Coding Tutor</h2>
+          <span>After leaving uni, to fund my theatre ambitions, I started private coding coaching business, teaching kids aged
+            8 - 14 using the same p5.js library that I used to teach myself JS as I found it a really engaging way to learn.
+            I also ran a coding club at a local secondary school which accumulated in me disguising as an industry professional
+            and mentoring a Go4SET team (a multi school STEM competition where groups complete a 10 week technical project).
+            I helped the group create a web application where a user can track there spending and add a savings goal, the
+            app then calculates where money can be saved. Click on the image try the app out.
+          </span>
+        </div>
+
+        <div id="TutorExtraCont">
+          <!-- <img src="images/BB-pic.png"> -->
+          <img class="blackBorder shadow" src="videos/BB-small.gif" alt=”animated” />
+        </div>
+      </grid>
+
+
+      <!-- BUILDING OWN WEBSITES -->
+
+      <grid class="grid twoSideGrid">
+        <grid id="WebsiteExtraCont" class="grid">
+          <div id="topWebsite">
+            <a target="_" href="TutorWebsite/index.html">
+              <img class="blackBorder shadow" src="images/TutorWeb-pic.png">
+            </a>
+          </div>
+
+          <div>
+            <a target="_" href="http://llanffynnoncottage.co.uk/">
+              <img class="blackBorder shadow" src="images/Cottage2.png">
+            </a>
+          </div>
+
+          <div>
+            <a target="_" href="http://nodatthefox.com/">
+              <img class="blackBorder shadow" src="images/NodAtTheFox-logoS.png">
+            </a>
+          </div>
+        </grid>
+
+        <div id="WebsiteCont" class="containerStyle">
+          <h2>Learning to build websites</h2>
+          <span>In 2018 I start teaching myself full-stack web development, completing courses on HTML5, CSS3, jQuery, AJAX techniques,
+            PHP and MySQL. I found that I preferred backend coding to front end as despite enjoying making fun engaging UIs
+            I found that the true logic and problem solving is found on the server side (working out why a div isn’t freaking
+            displaying properly isn’t my kind of problem solving). With these new skills I started building business websites
+            for friends and family. Click on the images to be taken to these websites.
+          </span>
+          <div class="horLogos">
+            <img src="images/Experience-in/html-logo.png" class="logo">
+            <img src="images/Experience-in/css-logo.png" class="logo">
+            <img src="images/Experience-in/php-logo.png" class="logo">
+            <img src="images/Experience-in/mysql-logo.png" class="logo">
+            <span class="fakeSpan"></span>
+          </div>
+        </div>
+      </grid>
+
+
+      <!-- AITUTOR -->
+
+      <grid class="grid twoSideGrid">
+        <div id="AITutorCont" class="containerStyle">
+          <h2>AITutor</h2>
+          <span>For a year I worked with AITutor, a new maths education startup co-founded by a friend of mine, where I wrote React
+            Components that autogenerated A-level maths questions and worked solutions. I gained experience working in a
+            team of developers: using Git and GitHub for version contro, running Docker to build the app and ran automated
+            testing with Circle CI. Jumping into a half built react project was a daunting prospect as a fairly novice programmer,
+            but throughout the year I gained an understanding how different parts fitted together to make the entire single
+            page application. Click on the logo to be taken to the website. </span>
+          <div class="horLogos">
+            <img src="images/Experience-in/react-logo.png" class="logo">
+            <img src="images/Experience-in/node-logo.png" class="logo">
+            <img src="images/Experience-in/git-logo.png" class="logo">
+            <img src="images/Experience-in/github-logo.png" class="logo">
+            <img src="images/Experience-in/vs-logo.png" class="logo">
+            <img src="images/Experience-in/docker-logo.png" class="logo">
+            <span class="fakeSpan"></span>
+          </div>
+        </div>
+
+
+        <a target="_" href="https://www.aitutor.co.uk/">
+          <div id="AITutorExtraCont">
+            <img id="AITutorImgs" class="blackBorder shadow" src="images/AITutor-logo.png">
+          </div>
+        </a>
+      </grid>
+
+      <div class="containerStyle" id="contactCont">
+        <h1>Contact Info</h1>
+        <span>I'm currently looking for a job as a full time software developer in London, so if you happen to know of any open
+          positions that an enthusiastic coder like myself might be able to fill then please do send me an email, I'd love
+          to hear from you.
+        </span>
+        <br/>
+        <br/>
+        <span>My email is</span>
+        <span class="contactDetails">
+          <u>sam.w.bratherton@gmail.com</u>
+        </span>
+        <br>
+        <span>Or message me via</span>
+        <span class="contactDetails">
+          <a href="https://www.linkedin.com/in/sam-williams-b1a736148/" target="_">LinkedIn.</a>
+        </span>
+        <br>
+        <span>You can also view my
+          <span class="contactDetails">
+            <a href="images/png_33.png">CV here.</a>
+          </span>
+        </span>
+
+      </div>
+    </grid>
+
+
+    <!-- EXPERIENCE LOGO BAR -->
+    <div id="experienceIn">
+      <img id="closeIcon" src="images/Experience-in/close-icon.png">
+      <div id="logos">
+        <img class="shakers" src="images/Experience-in/javascript-logo.png">
+        <img class="shakers" src="images/Experience-in/react-logo.png">
+        <img class="shakers" src="images/Experience-in/node-logo.png">
+        <img class="shakers" src="images/Experience-in/html-logo.png">
+        <img class="shakers" src="images/Experience-in/css-logo.png">
+        <img class="shakers" src="images/Experience-in/git-logo.png">
+        <img class="shakers" src="images/Experience-in/github-logo.png">
+        <img class="shakers" src="images/Experience-in/matlab-logo-3.png">
+        <img class="shakers" src="images/Experience-in/p5-logo.png">
+        <img class="shakers" src="images/Experience-in/vs-logo.png">
+        <img class="shakers" src="images/Experience-in/php-logo.png">
+        <img class="shakers" src="images/Experience-in/mysql-logo.png">
+        <img class="shakers" src="images/Experience-in/docker-logo.png">
+      </div>
+    </div>
+
+    <script src="javascript/experience-bar.js"></script>
+
+
+
+    <!-- Iframe examples -->
+    <div id="exampleBackground" class="noDisplay"></div>
+
+    <!-- The crack fox -->
+    <div id="crackFoxEE" class="noDisplay"></div>
+    <script src="javascript/CF-EE.js"></script>
+
+    <!-- Santorini example -->
+
+    <div id="santExample" class="noDisplay">
+    </div>
+
+    <!-- Script for the p5 examples -->
+    <script src="javascript/p5-examples.js"></script>
+
+    <div id="BBExample" class="noDisplay">
+    </div>
+    <script src="javascript/BB-example.js"></script>
+
+  </div>
+
+  <!-- Libraries for the background -->
+  <script src="TutorWebsite/libraries/p5.js"></script>
+  <script src="TutorWebsite/libraries/p5.dom.js"></script>
+  <script src="background.js"></script>
+
+
+
+</body>
+
+</html>

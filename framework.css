@@ -1,0 +1,210 @@
+/*********** My css framework *************/
+
+/* testing kit stuff */
+
+
+
+
+
+/* deleters and clearers */
+
+h1, h2, h3, h4 {
+  margin-top: 0px;
+  text-decoration: underline;
+}
+
+/* css grid classes */
+
+.grid {
+  display: grid;
+}
+/* elements */
+
+p {
+  line-height: 30px;
+}
+
+/* margines */
+.ml5 {
+  margin-left: 5px;
+}
+
+.mr5 {
+  margin-right: 5px;
+}
+
+.mt5 {
+  margin-top: 5px;
+}
+
+.mb5 {
+  margin-bottom: 5px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.ml30 {
+  margin-left: 30px;
+}
+
+.mr30 {
+  margin-right: 30px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.ml40 {
+  margin-left: 40px;
+}
+
+.mr40 {
+  margin-right: 40px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.ml80 {
+  margin-left: 80px;
+}
+
+.mr80 {
+  margin-right: 80px;
+}
+
+.mt80 {
+  margin-top: 80px;
+}
+
+.mb80 {
+  margin-bottom: 80px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clear {
+  clear: both;
+}
+
+/* fonts */
+.font-huge {
+  font-size: 250% !important;
+}
+
+.font-big {
+  font-size: 200% !important;
+}
+
+.font-med {
+  font-size: 150% !important;
+}
+
+.font-plus {
+  font-size: 125% !important;
+}
+
+.font-minus {
+  font-size: 90% !important;
+}
+
+.font-small {
+  font-size: 75% !important;
+}
+
+/* text align */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Text decoration */
+
+.italics {
+  font-style: italic;
+}
+
+/* display */
+
+.inline {
+  display: inline;
+}
+
+.hide {
+  display: none;
+}
+
+/* float */
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* specials */
+
+.bg-none {
+  background-color: transparent !important;
+}
+
+.animation-none {
+  animation: none !important;
+}
+
+/* text colour */
+.text-black {
+  color: black !important;
+}

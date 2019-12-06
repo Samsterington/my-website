@@ -1,0 +1,199 @@
+<head>
+    <head>
+    
+        <title>Coding Tutor</title>
+        
+        <script src="../libraries/p5.js" type="text/javascript"></script>
+        <script src="../libraries/p5.dom.js" type="text/javascript"></script>
+        <script src="sketch.js" type="text/javascript"></script>
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="libraries/jquery-ui-1.12.1/jquery-ui.js"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="../coding-tutor.css">
+        
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+        
+    </head>
+
+    <body>
+        
+        <div id="whatLearn">
+        
+            <div id="title">
+
+                <span><a href="../index.html">The Coding Coach</a></span>
+
+            </div>
+
+            <div id="menuBar">
+                
+                <span><a class="menuLink" href="../myStory/myStory.html">My Story</a></span>
+                <span><a class="menuLink" href="../whyLearn/whyLearn.html">Why learn to code?</a></span>
+                <span><a class="menuLink" href="whatLearn.html">What will you learn?</a></span>
+                <span><a class="menuLink" href="../YourWork/yourWork.html">Your work!</a></span>
+                <span><a class="menuLink" href="../sessionPricing/sessionPricing.html">Sessions &amp; Pricing</a></span>
+
+            </div>
+
+            <div id="menuUnderline"></div>
+
+            <div id="mainContent">
+                
+                <div id="wLMainInfo">
+
+                    <div class="header" id="wLMainInfoHeader">What will you learn?</div>
+                    
+                    <div id="javaScriptInfo">
+                        
+                        <img class="logoImg" id="javaScriptImg" src="../images/javaScriptLogo.png">
+                        
+                        <div id="javaScriptInfoContent">
+                            
+                            <p>The main programming language that I will teach you is JavaScript. It is one of the most powerful, and certainly most useful programming languages around today as JavaScript is the key functional language of the internet. When teaching coding, most instructors will start with HTML and then CSS (two other language also used in websites) before they teach JavaScript. Maybe this is because it seems easier to teach the less powerful, non dynamic languages first; however, I do this the other way around. <br><br> I have built a course that lets us delve straight into the real code without it being daunting or difficult. The code that lets us do amazing things from the get go. The code that is entertaining to learn and exciting to master. Have a look in the <a class="textLink" href="../YourWork/yourWork.html">Your Work!</a> section to see some examples of what my amazing students have created.</p>
+                            
+                            
+                        </div>
+                    
+                    </div>
+                    
+                    <div id="p5info">
+                    
+                        <img class="logoImg" id="p5img" src="../images/p5-jsLogo.png">
+
+                        <div id="closeTag" class="hidden"><span>Close</span></div>
+                        
+                        <div id="editorBackground" class="hidden textCentered">Loading...</div>
+
+                        <iframe id="editorIframe" class="hidden" src="https://alpha.editor.p5js.org/"></iframe>
+
+                        <div id="p5infoContent">
+                        
+                            <p>To teach Javascript in an accessible and entertaining way I use a JavaScript library called p5.js. If that doesn't mean anything to you don't worry, it simply allows us to quickly and easily draw shapes which we can then manipulate and animate using our own code. p5.js also has a free, online code editing software which will also allow us to save all our projects online so that it can be accessed anywhere we want. I encourage students to practice coding between sessions, exploring and creating their own ideas, and this p5.js editing software makes it really easy to do that. I also give you access to my course account so that you can look at any of my code at any time.<br><br>Click on the p5 logo on the left to have a look at the p5.js editing software that we'll  be coding on in our sessions. You can even have a go with it right now if you're feeling confident; or, if you would like to looks at some example code click on file in the top left hand corner, then select examples and choose one to have a look at. I recommend 'Hello P5 : animate' for some very simple coding, and 'Hello P5 : flocking' for something a bit more complex.</p>
+                        
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="htmlInfo">
+                    
+                        <img class="logoImg bgWhite" src="../images/htmlLogo.png">
+                        
+                        <div id="htmlInfoContent">
+                        
+                            <p>After we've mastered the art of JavaScript, we can then use our skills to develop and build our own websites and online applications. To do this we'll learn how to use HTML, a mark-up language that allows us to create headings, paragraphs, buttons and all the thing you might see on a website. With our JavaScript already up to scratch, HTML becomes a powerful tool to help present our new coding skills.</p>
+                        
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="cssInfo">
+                    
+                        <img class="logoImg bgWhite" src="../images/cssLogo.png">
+                        
+                        <div id="cssInfoContent">
+                        
+                            <p>We'll also delve into the world of CSS, another markup language (like HTML) which will allow us to style the elements of our websites and generally make them look slick, beautiful and all manner of positive adjectives. At this point you will be ready to delve into any area of programming that you want to, so you can pick where we go. Creating games, designing apps or just blasting through your maths homework.</p>
+                        
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="bottomMarg" id="menuUnderline"></div>
+                        
+                    <div class="center">
+
+                        <div id="emailMark"><span>Email</span></div>
+
+                        <span class="contactDetails">sam.williams@thecodingcoach.co.uk</span>
+
+                        <div id="phoneMark"><span>Phone</span></div>
+
+                        <span class="contactDetails">07454514023</span>
+                        
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+        
+        
+        <script type="text/javascript">   
+            
+            //On load calculations
+            
+            let iframeHorShift = ((innerWidth - 1100) / 2) + 30;
+            let closeHorShift = iframeHorShift - 90;
+            
+            $("#editorBackground").css("left",iframeHorShift);
+            $("#editorIframe").css("left",iframeHorShift);
+            $("#closeTag").css("left",closeHorShift);
+            
+            
+            //Site reactions
+            
+            function stretchOnHover(id) {
+                
+                let amount = $("#" + id).width() / 25;
+                
+                $("#" + id).hover(function() {
+
+                    $("#" + id).animate({width: "+=" + amount + "px"}, 300);
+
+                }, function() {
+
+                    $("#" + id).animate({width: "-=" + amount + "px"}, 300);
+
+                });
+                
+            };
+            
+            
+            stretchOnHover("title");
+            stretchOnHover("wLMainInfoHeader");
+            
+            $("#p5img").click(function() {
+                
+                $("#editorBackground").fadeIn("fast");
+                $("#editorIframe").fadeIn("slow");
+                $("#closeTag").fadeIn();
+                
+            });
+            
+            $("#closeTag").click(function() {
+                
+                $("#editorBackground").fadeOut("fast");
+                $("#editorIframe").fadeOut("slow");
+                $("#closeTag").fadeOut();
+                
+            });
+            
+            $("#p5img").hover(function() {
+                
+                $("#p5img").animate({width: "90px", margin: "14px 0 0 30px"}, 300);
+                
+            }, function() {
+                
+                $("#p5img").animate({width: "100px", margin: "6px 0 0 20px"}, 300);
+                
+            });
+            
+             $("#closeTag").hover(function() {
+                
+                $("#closeTag").css("background-color", "lightgrey");
+                
+            }, function() {
+                
+                $("#closeTag").css("background-color", "white");
+                
+            });   
+        
+        </script>
+    
+    </body>
+    
+</head>

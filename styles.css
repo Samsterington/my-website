@@ -1,0 +1,553 @@
+/* website specific styles */
+
+/* Overall */
+
+body {
+  margin: 50px 100px;
+  /* font-family: 'Poiret One', cursive; */
+  /* font-size: 120%; */
+font-family: 'Exo', sans-serif;
+}
+
+iframe {
+  border: none;
+}
+
+.noDisplay {
+  display: none !important;
+}
+
+.shadow:hover {
+    box-shadow: 1px 1px 10px black;
+}
+
+/* Container rules */
+
+#mainGrid {
+  grid-column-gap: 20px;
+  grid-row-gap: 35px;
+}
+
+#mainGrid > div > h1,h2,h3 {
+  text-align: center;
+}
+
+#mainGrid > div {
+  justify-self: center;
+  background-color: transparent;
+}
+
+grid > div {
+  background-color: transparent;
+}
+
+.twoSideGrid {
+  grid-gap: 50px;
+  grid-template-columns: min-content min-content;
+  align-items: center;
+  justify-content: center;
+}
+
+.threeSideGrid {
+  grid-gap: 50px;
+  grid-template-columns: min-content min-content min-content;
+  grid-template-rows: max-content;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionHeader {
+  margin-top: 20px;
+}
+
+.containerStyle {
+  padding: 20px;
+  border: black 2px solid;
+  border-radius: 20px;
+  transition: background-color 2s;
+  -webkit-transition: background-color 2s;
+}
+
+.containerStyle:hover {
+  background-color: white;
+}
+
+.blackBorder {
+  border: black 2px solid;
+}
+
+/* Content classes  */
+
+.logo {
+  width: 80px;
+  /* background-color: white; */
+  border-radius: 5px;
+}
+
+.horLogos {
+  text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    margin-top: 10px;
+    margin: 10px 20px 0px 20px;
+}
+.horLogos > img{
+  vertical-align: bottom;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    background-color: transparent;
+}
+
+.fakeSpan {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0
+}
+
+/* Container contents */
+
+/* Intro */
+
+#introCont {
+  width: 640px;
+  /* justify-self: center; */
+  margin-bottom: 0px;
+  transition: background-color 2s;
+  -webkit-transition: background-color 2s;
+}
+
+#introCont:hover {
+  background-color: white;
+}
+
+#introCont > h1 {
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+#introText {
+  /* margin: 0px auto;  */
+  font-style: italic;
+  font-size: 10pt;
+  text-align: center;
+  display: block;
+}
+
+#contactButton {
+  border: black 1pt solid;
+  border-radius: 5px;
+  width: 100px;
+  margin: 7px auto -7px auto;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+#contactButton:hover {
+  background-color: lightgray;
+}
+
+/* Journeys */
+
+#journeyGrid > div {
+  width: 350px;
+  margin-top: 80px;
+  justify-self: center;
+  text-align: center;
+  /* background-color: black;
+  color: white; */
+}
+
+#journeyGrid h1 {
+  margin-bottom: 0px;
+  text-decoration: none;
+}
+
+#journeyCodeCont {
+  width: 400px;
+  /* justify-self: right; */
+}
+
+
+#journeyTheatreCont {
+  width: 400px;
+  /* justify-self: right; */
+}
+
+
+#journeyOtherCont {
+  width: 400px;
+  /* justify-self: right; */
+}
+
+
+/* Information */
+
+#infoCont {
+  width: 600px;
+}
+
+#infoCont li {
+  padding-bottom: 5px;
+}
+
+#infoExtraCont {
+  width: 450px; /* needs to be as big as biigest image below */
+
+}
+
+#infoExtraCont > img {
+  width: initial;  
+  border-radius: 20px;
+  display: block;
+  float: right;
+}
+
+#easterEgg {
+  cursor: pointer;
+}
+
+#crackFox {
+  position: fixed;
+  border-radius: 20px;
+  top: 50px;
+  left: 200px;
+  background-color: white;
+  z-index: 1;
+}
+
+
+/* Matlab */
+
+#matlabCont {
+  width:600px;
+  /* justify-self: left; */
+}
+
+#matlabExtraCont  {
+  width: 400px;
+}
+
+#matlabExtraCont > img {
+  width: initial;
+  display: block;
+  /* margin: 0px auto; */
+  border-radius: 20px;
+
+}
+
+#matlabInnerGrid {
+  justify-content: center; 
+  align-items: center;
+  grid-gap: 20px;
+  grid-template-columns: auto auto;
+}
+
+#gprPic {
+  padding-right: 10px;
+}
+
+/* Javascript */
+
+#JSCont {
+  width: 600px;
+}
+
+#JSExtraCont {
+  width:405px; /* This is all hardcoded and would be good to make dynamic */
+  height: 200px;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  padding: 3px 0px 3px 3px;
+}
+
+#JSExtraCont > img {
+  width: 49%;
+  display: inline;
+  border-radius: 4px;
+}
+
+#JSInnerGrid {
+  justify-items: center;  
+  align-items: center;
+  grid-row-gap: 0px;
+  grid-column-gap: 20px;
+  grid-template-columns: min-content auto;
+  grid-template-rows: auto auto;
+}
+
+#JSInnerGrid, img {
+  grid-column-start: 1;
+}
+
+#JStext {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding-bottom: 20px;
+}
+
+/* Santorini Example */
+
+
+#exampleBackground {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+}
+
+#santorini {
+  position: fixed;
+  border-radius: 20px;
+  top: 50px;
+  left: 50px;
+  background-color: white;
+  z-index: 1;
+
+}
+
+#santRules {
+  position: fixed;
+  border-radius: 20px;
+  top: 50px;
+  left: 750px;
+  width: 400px;
+  height: min-content;
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+  z-index: 1;
+}
+
+#closeExample {
+  background-color: white;
+  border-radius: 20px;
+  position: fixed;
+  top: 10px;
+  left: 50px;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+#closeExample:hover {
+  background-color: gray;
+}
+
+/* Tutoring */
+
+#TutorCont {
+  width: 500px;
+}
+
+#TutorExtraCont > img {
+  width:300px;
+  border-radius: 10px;
+}
+
+/* Bubble budgeting */
+#bubbleBudgeting {
+  position: fixed;
+  border-radius: 20px;
+  top: 50px;
+  left: 50px;
+  background-color: white;
+  z-index: 1;
+}
+
+#BBexplain {
+  position: fixed;
+  border-radius: 20px;
+  top: 50px;
+  left: 1070px;
+  width: 300px;
+  height: min-content;
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+  z-index: 1;
+}
+
+
+/* Wbsites */
+
+#WebsiteCont {
+  width:500px;
+}
+
+#websiteExtraCont {
+  grid-template-columns: max-content max-content;
+  grid-template-rows: max-content max-content;
+  grid-gap: 10px;
+}
+
+#WebLinks {
+  text-align: center;
+}
+
+#websiteExtraCont > div > a > img {
+  height: 200px;
+  width: auto;
+  border-radius: 10px;
+}
+
+#websiteExtraCont > div {
+  background-color: transparent;
+}
+
+#topWebsite {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: center;
+}
+
+/* AITutor */
+
+#AITutorCont {
+  width:700px;
+}
+
+#AITutorImgs {
+  background-color: #183766;  
+  width: 300px;
+  border-radius: 70px;
+  padding: 1px 5px 1px 4px;
+}
+
+
+/* Contact info */
+
+#contactCont {
+  width: 700px;
+  /* height: 300px; */
+  margin-top: 100px;
+  margin-bottom: 300px;
+  transition: background-color 2s;
+  -webkit-transition: background-color 2s;
+}
+
+#contactCont:hover {
+  background-color: white;
+}
+
+.contactDetails {
+  font-size: 14pt;
+}
+
+
+/* EXTRA BITS */
+
+/* EXPERIENCE IN */
+
+#experienceIn {
+  /* background-color: coral; */
+  position: fixed;
+  top:0;
+  right:0;
+  overflow: scroll;
+}
+
+#logos {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: right;
+  align-items: center;
+  grid-gap: 5px;
+  margin: 10px;
+
+  position: relative;
+  animation-fill-mode: forwards;
+}
+
+#logos > img {
+  width:50px;
+  display: block;
+  border-radius: 5px;
+}
+
+#closeIcon {
+  display: block;
+  width: 18px;
+  justify-self: center;
+  cursor: pointer;
+  animation: shrink 0.2s; 
+  animation-fill-mode: backwards;
+  margin: 10px auto;
+}
+
+#closeIcon:hover {
+  animation: swell 0.2s;
+  animation-fill-mode: forwards
+}
+
+.shakers {
+  position: relative;
+  animation: shake 0.15s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+.shakers:hover {
+  animation-play-state: running !important;
+}
+
+#expressLogo {
+  padding: 0px 3px;
+  background-color: white;
+}
+
+/* BACKGROUND */ 
+
+#myCanvas {
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#backgroundSwitch {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding: 7px;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+}
+
+#backgroundSwitch:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+#contentSwitch {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  padding: 7px;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+}
+
+#contentSwitch:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+
+/* Swapping pictures */
+#fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; 
+}

@@ -1,0 +1,812 @@
+<style>
+
+html {
+
+    background-color: black;
+
+}
+
+body {
+
+    /* font-family:  'Arial Narrow', sans-serif; */
+    font-family:'Dosis', 'Arial Narrow', sans-serif;
+    background: black;
+}
+
+a {
+    
+    text-decoration: none;
+    color: black;
+}
+
+.startWords {
+
+    color: white;
+    font-size: 80px;
+    font-weight: 100;
+    position: absolute;
+    top: 40%;
+    margin: 0 10%;
+    width: 80%;
+    text-align: center;
+
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+.clear {
+    
+    clear: both;
+}
+
+#homepage {
+
+/*                Can make it fixed here   */
+
+}
+
+#whatLearn {
+
+
+}
+
+.basicText {
+    
+    color: white;
+    font-size: 25px;
+    margin: 0px !important
+}
+
+.textCentered {
+    
+    text-align: center !important;
+}
+
+.textJustified {
+    
+    text-align: justify;
+}
+
+.textRight {
+    
+    text-align: right !important;
+}
+
+.textLeft {
+    
+    text-align: left !important;
+}
+.largerText {
+    
+    font-size: 40px !important;
+    margin: 10;
+}
+
+.largeText {
+    
+    font-size: 30 !important;
+}
+
+.noMargin {
+    
+    margin: 0px !important;
+}
+
+.noMarginTop {
+    
+    margin-top: 0px;
+}
+
+.floatLeft {
+    
+    float: left !important;
+}
+
+.floatRight {
+    
+    float: right;
+}
+
+.imgFullScreen {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0 25%;
+    margin: 0;
+    background-color: black;
+    opacity: 0.75;
+    width: 100%;
+    height: 1600px;
+    z-index: 1;
+}
+
+.blackText {
+    
+    color: black !important;
+}
+
+
+
+/*----------------------------------------------------------*/
+
+#myCanvas {
+
+    position: fixed;
+    top: -10%;
+    left: 0%;
+
+}
+
+
+/*----------------------------------------------------------*/
+
+
+
+.header {
+    
+    background-color: white;
+    color: black;
+    font-size: 40px;
+    border-radius: 50px;
+    text-align: center;
+    
+}
+
+
+#title {
+
+    width: 400px;
+    background-color: white;
+    margin: 30px auto 20px auto;
+    text-align: center;
+    padding-bottom: 8px;
+    border-radius: 50px;
+
+}
+
+#title span{
+
+    font-size: 50px;
+    color: black;
+    margin-top: 2px;
+
+}
+
+#menuBar {
+
+    width: 1100px;
+    height: 52px;
+    background-color: clear;
+    margin: 0px auto;
+
+}
+
+.menuLink{
+
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    margin-left: 35px;
+
+}
+
+.menuLink:hover {
+    
+    color: lightgrey;
+}
+
+#menuUnderline {
+
+    width: 1040px;
+    height: 1px;
+    margin: 0px auto;
+    background-color: white;
+}
+
+#centering {
+
+    margin-left: 80px;
+
+}
+
+
+/*----------------------------------------------------------*/
+
+
+#mainContent {
+
+    width: 1100px;
+    background-color: clear;
+    margin: 20px auto 25px auto;
+    padding-bottom: 100px;
+
+}
+
+/*----------------------------------------------------------*/
+/*------------------------Homepage--------------------------*/
+/*----------------------------------------------------------*/
+
+
+#imageContainer {
+    
+    width: 250px;
+    padding-left: 50px;
+    height: 620px;
+    float: left;
+    
+}
+
+
+.samImg{
+    
+    width:180;
+    border: white solid 4px;
+    border-radius: 50%;
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#homepage p{
+    
+    font-size: 25px;
+    text-align: justify;
+    color: white;
+    
+}
+
+#introContainer {
+
+    float: left;
+    width: 700px;
+    height: 680px;
+    margin: 0px 30px;
+    padding: 0px;
+    color: white;
+    font-size: 35px;
+
+
+}
+
+#introHeader {
+
+    width: 180px;
+    margin: 10px auto 30px auto;
+    padding: 0px;
+
+}
+
+#introContainer a{
+    
+    color: white;
+    text-decoration: none;
+}
+
+#introContainer a:hover{
+    
+    font-weight: bold;
+    color: lightblue;
+}
+
+/*-----------------------------------------------------*/
+/*-----------------What will you learn-----------------*/
+/*-----------------------------------------------------*/
+
+
+#wLMainInfoHeader {
+
+    width: 350px;
+    height: 55px;
+    margin: 10px auto 10px auto;
+
+}
+
+#whatLearn p{
+
+    font-size: 25px;
+    margin: 0px 0px 25px 0px;
+}
+
+/*-----------------------------------------------------*/
+
+#p5info {
+
+    padding: 20px;
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+.logoImg {
+
+    width: 100px;
+    border: solid white 4px;
+    border-radius: 7px;
+    float:left;
+    margin: 6px 0 0 20px;
+
+}
+
+#editorIframe {
+
+    width: 1040px;
+    height: 600px;
+    margin: 0px auto;
+    position: fixed;
+    left: 0px;
+    top: 110px;
+    border: solid white 4px;
+    border-radius: 15px;
+
+}
+
+#editorBackground {
+    
+    width: 1040px;
+    height: 340px;
+    margin: 0px auto;
+    position: fixed;
+    left: 0px;
+    top: 110px;
+    border: solid white 4px;
+    border-radius: 15px;
+    background-color: white;
+    padding-top: 260px;
+    font-size: 250%;
+}
+
+#closeTag {
+
+    width: 85px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    position: fixed;
+    left: 110px;
+    top: 120px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+#p5infoContent {
+
+    width: 880px;
+    height: 480px;
+    float: left;
+    margin: 0px 20px;
+    color: white;
+}
+
+
+.examplesLogIn {
+
+    font-size: 25px;
+    width: 700px;
+    margin: 0px 0px 0px 200px;
+
+}
+
+/*-----------------------------------------------------*/
+
+#javaScriptInfo {
+
+    padding: 20px;
+    height: 325px;
+    margin-bottom: 20px;
+}
+
+#javaScriptInfoContent {
+
+        width: 880px;
+        height: 330px;
+        float: left;
+        margin: 0px 20px;
+        color: white;
+}
+
+
+/*-----------------------------------------------------*/
+
+#htmlInfo {
+
+    padding: 20px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.bgWhite {
+
+    background-color: white;
+    padding: 5px;
+    width: 90px;
+}
+
+#htmlInfoContent {
+
+        width: 880px;
+        height: 160px;
+        float: left;
+        margin: 0px 20px;
+        color: white;
+}
+
+/*-----------------------------------------------------*/
+
+#cssInfo {
+
+    padding: 20px;
+    height: 165px;
+    margin-bottom: 20px;
+}
+
+#cssInfoContent {
+
+        width: 880px;
+        height: 160px;
+        float: left;
+        margin: 0px 20px;
+        color: white;
+}
+
+/*-----------------------------------------------------*/
+
+#emailMark {
+
+    background-color: white;
+    color: black;
+    width: 80px;
+    font-size: 20px;
+    height: 28px;
+    text-align: center;
+    border-radius: 14px;
+    float: left; 
+
+}
+
+#phoneMark {
+
+    background-color: white;
+    color: black;
+    width: 80px;
+    font-size: 20px;
+    height: 28px;
+    text-align: center;
+    border-radius: 14px;
+    float: left; 
+    margin-left: 25px;
+
+}
+
+.bottomMarg {
+
+    margin-bottom: 15px !important;
+
+}
+
+.contactDetails {
+
+    color: white;
+    font-size: 20;
+    float: left;
+    margin-left: 15px;
+
+}
+
+.center {
+
+    margin: 0px auto;
+    width: 590px;
+
+}
+
+/*-----------------------------------------------------*/
+/*------------------------My Story---------------------*/
+/*-----------------------------------------------------*/
+
+#storyHeader {
+    
+    width: 200px;
+    height: 55px;
+    margin: 0px auto 20px auto;
+    
+} 
+
+.tabHead {
+    
+    height: 41px;
+    color: white;
+    border: white 3px solid;
+    border-radius: 30px;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    margin: 0px 10px 10px 18px;
+    width: 200px;
+    
+}
+
+.hoverTab {
+    
+    color: black;
+    background-color: white;
+}
+
+.selected {
+    
+    color: black !important;
+    background-color: white !important;
+}
+
+#tabHeads {
+    
+    width: 940px;
+    margin: 0 auto;
+}
+
+#storyBox {
+    
+    width:1000px;
+    border: white 3px solid;
+    float: left;
+    border-radius: 30px;
+    margin: 10px 45px 20px 45px;
+    padding: 0px 20px;
+    
+}
+
+.textLink {
+    text-decoration: none;
+    color: white;
+}
+
+.textLink:hover {
+    
+    color: lightgrey;
+}
+
+#details {
+    
+    padding-left: 10px;
+    width: 200px;
+    float: left;
+}
+
+#detailsAnswers {
+    
+    margin-left: 10px;
+    width: 400px;
+    float: left;
+}
+
+#detailsStory {
+    padding: 20px;
+    height: 300px;
+}
+
+#dBS {
+    
+    width: 200px;
+    border: solid white 4px;
+    border-radius: 10px;
+    margin: 5px 0px 0px 6px;
+    
+}
+
+#dbsLarge {
+    
+    position: absolute;
+    top:0;
+    left:25%;
+    width: 50%;
+    margin-top: 100px;
+    opacity: 1;
+    border: white 7px solid;
+    border-radius: 30px;
+    z-index: 2;
+}
+
+#bigCloseTag {
+
+    width: 100px;
+    height: 36px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    left: 25%;
+    top: 55px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 26px;
+    z-index: 1;
+
+}
+
+#detailsText {
+    
+    margin-top: 110px;
+    border: white solid 4px;
+    border-radius: 20px;
+    width: 660px;
+    height: 300px;
+    margin: 20px 0;
+    padding-bottom: 15px;;
+
+    float: left;
+    
+}
+
+#detailsStory span{
+    padding-top: 5px;
+    color: white;
+    float: left;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+#dbsBox {
+    width: 220px;
+    border: white 4px solid;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px
+}
+/*-------------------------------------------------------*/
+/*---------------Sessions and Pricing--------------------*/
+/*-------------------------------------------------------*/
+
+#sessPricHeader {
+    
+    height: 55px;
+    width: 370;
+    margin: 10px auto;
+    
+}
+
+#sessionNpricing p{
+    
+    font-size: 25px;
+    color: white;
+    
+}
+
+#squeezeContent {
+    
+    padding: 0px 50px;
+}
+
+.pricingText {
+    
+    font-size: 35px;
+    color: white;
+    
+}
+
+#pricingTitle {
+    
+    margin-left: 100px;
+}
+
+#pricesDiv {
+    
+    width:670px;
+    margin: 10px auto 30 auto;
+}
+
+/*-------------------------------------------------------*/
+/*--------------------------Your Work--------------------*/
+/*-------------------------------------------------------*/
+
+#yWHeader {
+    
+    width: 210px;
+    margin: 10px auto 15px auto;
+}
+
+#centerIframes {
+    
+    width: 1000px;
+    margin: 0px auto;
+}
+
+#examplesArea p{
+    
+    color: white;
+    font-size: 20px;
+    margin:0;
+    text-align: justify;
+}
+
+#topLeft {
+    
+    border: white 4px solid;
+    border-radius: 20px;
+    width: 310px;
+    padding: 20px 20px 15px 20px;
+    margin: 20px;
+    float: left;
+}
+
+#dodgeGame {
+    
+    width: 300;
+    height: 450;
+    border: white thick solid;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    
+    
+}
+
+#topRight {
+    
+    float: left;
+    width: 510;
+    padding: 20px 20px 15px 20px;
+    margin: 20px;
+    border: white 4px solid;
+    border-radius: 20px;
+    
+}
+
+#movingLight {
+    
+    width: 500;
+    height: 500;
+    border: white thick solid;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    
+}
+
+#bottomMid {
+    
+    width: 510;
+    padding: 20px 20px 15px 20px;
+    margin: 20px auto;
+    border: white 4px solid;
+    border-radius: 20px;
+    
+}
+
+#physicsBalls {
+    
+    width: 500;
+    height: 400;
+    border: white thick solid;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/*---------------------------------------------------------------*/
+/*------------------------Why learn to code----------------------*/
+/*---------------------------------------------------------------*/
+
+
+#whyHeader {
+    
+    width: 340;
+    height: 54;
+    margin: 10px auto 10px auto;
+}
+
+#whyLearnInfo {
+    
+    width: 900px;
+    margin: 0px auto 40px auto;
+}
+
+#whyLearnInfo ul{
+    
+    padding-left: 90px;
+}
+
+
+</style>
